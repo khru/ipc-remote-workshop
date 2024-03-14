@@ -8,6 +8,9 @@ final class RockPaperScissorsGame
 {
     public function play(string $playerOneMove, string $playerTwoMove): string
     {
-        return "p1";
+        if ($playerOneMove === 'r'){
+            return "p1";
+        }
+        return "p2";
     }
 }
