@@ -6,13 +6,13 @@ namespace Kata;
 
 final class RockPaperScissorsGame
 {
-    public function play(string $playerOneMove, string $playerTwoMove): string
+    public function play(string $moveOne, string $moveTwo): string
     {
-        if ($playerOneMove === 'p') {
+        if ($moveOne === 'p') {
             return "p1";
         }
 
-        if ($playerOneMove === 'r'){
+        if ($moveOne === 'r'){
             return "p1";
         }
 

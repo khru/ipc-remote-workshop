@@ -33,4 +33,10 @@ final class ChangeMeTest extends TestCase
     {
         self::assertSame("p1", $this->game->play("p","r"));
     }
+
+    /** @test */
+    public function given_player_1_choose_rock_when_the_player_2_chooses_paper_then_player_2_should_win(): void
+    {
+        self::assertSame("p2", $this->game->play("r","p"));
+    }
 }
