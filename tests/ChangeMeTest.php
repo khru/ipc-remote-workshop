@@ -4,15 +4,16 @@ declare(strict_types=1);
 
 namespace KataTests;
 
-use Kata\ChangeMe;
+use Kata\RockPaperScissorsGame;
 use PHPUnit\Framework\TestCase;
 
 final class ChangeMeTest extends TestCase
 {
-    public function test_change_me(): void
+    /** @test */
+    public function given_player_1_choose_rock_when_the_player_2_chooses_scissors_then_player_1_should_win(): void
     {
-        $changeMe = new ChangeMe();
+        $game = new RockPaperScissorsGame();
 
-        self::assertTrue($changeMe->changeMe());
+        self::assertSame("p1", $game->play("r","s"));
     }
 }
