@@ -6,8 +6,8 @@ namespace Kata;
 
 final class RockPaperScissorsGame
 {
-    public function play(string $playerOneMove, string $playerTwoMove): bool
+    public function play(string $playerOneMove, string $playerTwoMove): string
     {
-        return true;
+        return "p1";
     }
 }
