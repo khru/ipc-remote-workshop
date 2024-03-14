@@ -16,4 +16,12 @@ final class ChangeMeTest extends TestCase
 
         self::assertSame("p1", $game->play("r","s"));
     }
+
+    /** @test */
+    public function given_player_1_choose_scissors_when_the_player_2_chooses_rock_then_player_2_should_win(): void
+    {
+        $game = new RockPaperScissorsGame();
+
+        self::assertSame("p2", $game->play("s","r"));
+    }
 }
